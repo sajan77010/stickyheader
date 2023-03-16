@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-color: black;
+    margin: 0;
+    /* padding-top: 5em; */
+}
+.header{
+    background-color:black;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    /* width: 100%; */
+    transition: background-color 0.4s ease-in-out;
+}
+.scrolled{
+    background-color: white;
+    opacity: 0.98;
+   
+}
+.header nav{
+    padding: 1.5em 0 1.5em 5em;
+    padding-top: 2em;
+}
+.header nav a {
+    color: white; 
+    text-decoration: none;
+    font-size: 1.6em;
+    margin: 1em;
+    transition: color 0.4s ease-in-out;
+    text-transform: uppercase; 
+}
+.header.scrolled nav a{
+    color: black; 
+}
+.header.scrolled nav a:hover{
+    color: red;
+}
+
+.hero-section{
+    height: 1500px;
+    padding: 2em 6em 2em 6em;
+}
+.hero-section p{
+    color: white;
+    font-size: 1.4em;
+    padding: 2em 4em 2em 4em;
+    line-height: 1.8em;
+
+}

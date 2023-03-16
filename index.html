@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>sticky Header</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+            <a href="#">service</a>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore mollitia aperiam similique blanditiis modi culpa doloribus velit voluptatibus deserunt saepe animi earum architecto voluptatum sint voluptatem nesciunt fuga, doloremque dolorum. Nam distinctio totam recusandae. Magnam labore cum excepturi iure exercitationem quasi aliquam sint, modi vero. Adipisci nihil neque distinctio non fugit harum ullam error dignissimos in unde. Veritatis deserunt magnam non dolore odio, repellat voluptatum soluta quae aliquid deleniti facere error in mollitia veniam sunt dicta velit cum porro debitis ullam molestias. Ex qui magni nostrum repudiandae ullam, recusandae similique voluptatibus animi id modi corporis! Sequi eum ipsum illo cum sit. Molestias sapiente dolorem qui iure officiis quas deleniti obcaecati temporibus enim voluptatem dignissimos inventore natus, tenetur minima in incidunt? Eos reiciendis autem impedit adipisci facere pariatur, optio sit similique blanditiis, doloremque quam illum! Consequuntur doloremque itaque, molestiae deserunt distinctio, mollitia totam dolores voluptatibus veniam eligendi maiores, doloribus sunt dignissimos praesentium porro sed a esse cumque. Officia, aperiam! Cumque, asperiores eum! Enim odit necessitatibus, culpa dolorem eligendi dignissimos ab iure consequuntur veniam doloremque delectus suscipit magnam hic autem expedita odio excepturi quia minus at commodi ullam aut beatae molestias. Commodi saepe eos velit cumque laborum impedit nisi rem, vel pariatur.</p>
+
+    </section>
+
+    <script>
+
+       
+        document.addEventListener('scroll', () => {
+            const header = document.querySelector ('header');
+            if (window.scrollY > 400) {
+                header.classList.add('scrolled');
+            }else{
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
